@@ -1,0 +1,130 @@
+body {
+    background-color: #0079BF;
+}
+
+.navbar {
+    background-color: #026AA7;
+    border: 0px;
+}
+
+#texto_nomeQuadro {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 20%;
+}
+
+#btn-header {
+    position: relative;
+    top: 8px;
+    right: 8px;
+    color: white;
+    font-weight: bold;
+    background: hsla(0,0%,100%,.3);
+}
+
+#btn_adicionar_quadro {
+    position: relative;
+    top: 8px;
+    background: hsla(0,0%,100%,.3);
+    color: white;
+}
+
+.col-md-3 {
+    width: 272px;
+    height: 78px;
+    /* background-color: #E2E4E6; */
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.col-md-4 {
+    height: 100px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 5%;
+    margin-bottom: 5px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.col-md-4:hover {
+    opacity: 0.8;
+}
+
+#msgBem_vindo {
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#quadros {
+    position: relative;
+    top: 50%;
+    font-weight: bold;
+    text-align: center;
+    
+}
+/* Temporario */
+#containerQuadros {
+    display: block;
+}
+
+#containerListas {
+    display: none;
+}
+
+#texto_nomequadro {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#campo_addLista {
+    background-color: rgba(1, 107, 168, 0.4);
+    border-radius: 2px;
+    border: 0px;
+    width: 264px;
+    height: 34px;
+    margin-left: 15px;
+}
+
+#campo_addLista::-webkit-input-placeholder {
+    padding-left: 10px;
+    color: #A0BFD1;
+}
+
+.panel-heading {
+    font-weight: bold;
+}
+
+.panel-body {
+    background-color: #DDDDDD;
+    padding: 0px;
+}
+
+#btn_addCartao, #btn_nome_cartao {
+    width: 100%;
+}
+
+#input_addCartao {
+    padding-left: 5px;
+    border-radius: 2px;
+    border: 1px solid grey;
+    width: 100%;
+    height: 35px;
+}
+
+#nova_cor {
+    color: white;
+    font-weight: bold;
+    /* display: inline-block; */
+}
+
+#menu_divquadro li{
+    display: inline-block;
+    margin-left: -25px;
+}

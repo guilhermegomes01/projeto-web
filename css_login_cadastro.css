@@ -1,0 +1,40 @@
+body {
+    font-family: Tahoma;
+}
+
+#image-logo {
+    height: 100%;
+}
+
+.navbar {
+    opacity: 0.5;
+    background: linear-gradient(to bottom, #CBCBDC 0, #9998B6 100%);
+}
+
+#img-trello {
+    position: relative;
+    left: 22%;
+}
+
+#container-texto-inicial {
+    text-align: center;
+    display: block;
+}
+
+#container-login, #container-cadastro {
+    display: none;
+}
+
+#btnLogin {
+    border-radius: .4em;
+    box-shadow: 0 2px 0 #cdd2d4;
+    background-color: #e2e4e6;
+}
+
+#btnCadastrar {
+    border-radius: .4em;
+    background: linear-gradient(to bottom, #61bd4f 0, #5aac44 100%);
+    color: white;
+    box-shadow: 0 1px 0 #3f6f21;
+    font-weight: bold;
+}

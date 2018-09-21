@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Início | Trello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css_pagina_inicial.css">
+</head>
+
+<body id="corpo">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></a>
+                <button id="btn-header" class="btn btn-deafult">
+                    <span class="glyphicon glyphicon-th-large"></span> Quadros
+                </button>
+                </a>
+                <button class="btn btn-deafult" id="btn_adicionar_quadro" data-toggle="modal" data-target="#myModal">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </button>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="barra_pesquisa" name="pesquisar">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" id="button_pesquisa" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </nav>
+    <div class="container" id="containerQuadros">
+        <h1 id="msgBem_vindo">Bem vindo, nessa tela será mostrado seus quadros.</h1>
+        <div class="row" id="linha">
+        </div>
+    </div>
+
+    <div class="container" id="containerListas">
+        <div class="row" id="div_quadro">
+            <h3 id="texto_nomequadro"></h3>
+            <ul id="menu_divquadro">
+                <li>
+                    <p id="cor" style="color: white;">
+                        <b>Alterar cor do quadro</b>
+                        <form id="alterar_cor" enctype="application/json">
+                            <input type="color" name="color">
+                            <button class="btn btn-default" id="btn_alterar_cor">Confirmar</button>
+                        </form>
+                    </p>
+                </li>
+                <li style="padding-left: 60px;">
+                    <p id="id_renomear_board" style="color: white;">
+                        <b>Renomear Quadro</b>
+                        <form id="renomear_board" enctype="application/json">
+                            <input type="text" name="new-board-name">
+                            <button class="btn btn-default" id="new-board-name">Renomear</button>
+                        </form>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <form id="form_addList" enctype="application/json">
+                <input type="text" name="addLista" placeholder="+ Adicionar Lista" id="campo_addLista">
+            </form>
+        </div>
+        <div class="row" id="linha_addLista">
+        </div>
+    </div>
+
+    <!-- Modal para cadastrar um quadro -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Criar um Quadro</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="cadastrarQuadro" enctype="application/json">
+                        <h4>Digite o nome do Quadro:</h4>
+                        <input type="text" name="name" id="board-name">
+                        <br>
+                        <h4>Escolha uma cor para o Quadro</h4>
+                        <input type="color" name="color" id="board-color">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="criarQuadro" class="btn btn-default" data-dismiss="modal">Criar Quadro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para alterar um List -->
+    <div class="modal fade" id="modal_list" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Alterar um List</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="form_alterar_list" enctype="application/json">
+                        <h4>Digite o novo nome do List:</h4>
+                        <input type="text" name="rename_list" id="rename_list">
+                        <br>
+                    </form>
+                    <form id="excluir_list" enctype="application/json">
+                        <h4>Deseja excluir o List?</h4>
+                        <button class="btn btn-default" id="btn_excluir_list">Excluir</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <h4>Apenas renomear</h4>
+                    <button type="button" id="renomear_list" class="btn btn-default" data-dismiss="modal">Renomear List</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js_pagina_inicial.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

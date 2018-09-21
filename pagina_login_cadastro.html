@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css_login_cadastro.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="pagina_login_cadastro.html">
+                    <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/trello-header-logos/1c3a2d636e34d62a6cb27d83e5e6956b/trello-logo-black.svg"
+                        class="img-responsive" id="image-logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="pagina_login_cadastro.html" id="home" style="color:white"><b>Home</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="container-texto-inicial">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 col-xs-12">
+                <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/c13d1cd96a2cff30f0460a5e1860c5ea/header-logo-blue.svg"
+                    class="img-responsive" alt="Trello" id="img-trello">
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 col-xs-12">
+                <h1>Trello é a maneira gratuita, flexível e visual de organizar tudo, com quem quiser.</h1>
+                <p>Livre-se das longas trocas de e-mails, planilhas desatualizadas, notas adesivas que não colam mais e software
+                    complicado para gestão de projetos. O Trello deixa você visualizar todo o projeto em um só lugar.</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 col-xs-12">
+                <p>
+                    <button class="btn btn-default" id="btnCadastrar">Cadastre-se no Trello. É grátis!</button>
+                </p>
+                <p>
+                    <button class="btn btn-default" id="btnLogin">Fazer Login</button>
+                </p>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+    <div class="container" id="container-cadastro">
+        <div class="row">
+            <div class="col-md-3 col-sm-3"></div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h2>Criar uma conta no Trello</h2>
+                <form id="form_cadastrarUsuario" enctype="application/json">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu Nome" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Usuário:</label>
+                        <input type="text" class="form-control" id="usuario" placeholder="Digite seu Nome de Usuário" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Senha:</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" name="password" required>
+                    </div>
+                    <button class="btn btn-default">Cadastrar</button>
+                    <button class="btn btn-deafult" type="reset">Limpar</button>
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-3"></div>
+        </div>
+    </div>
+
+    <div class="container" id="container-login">
+        <div class="row">
+            <div class="col-md-3 col-sm-3"></div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h2>Fazer Login</h2>
+                <form id="form_login" enctype="application/json">
+                    <div class="form-group">
+                        <label for="username">Usuário:</label>
+                        <input type="text" class="form-control" id="usuario" placeholder="Digite seu Nome de Usuário" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Senha:</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" name="password" required>
+                    </div>
+                    <button class="btn btn-default">Fazer Login</button>
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-3"></div>
+        </div>
+    </div>
+
+    <script src="js_login_cadastro.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
